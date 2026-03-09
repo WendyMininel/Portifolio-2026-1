@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wendy Mininel - Portfólio Acadêmico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="interface"> 
+            
+            <div class="logo">
+                <h1>Wendy Mininel</h1>
+            </div>
+
+            <div class="header-right">
+                <button class="btn-toggle" id="btnToggleCurso">
+                    <i class="fas fa-sync-alt"></i> <span id="btnTexto">Mudar para Biomedicina</span>
+                </button>
+
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#topo">Sobre mim</a></li>
+                        <li><a href="#formacao">Formação</a></li>
+                        <li id="menu-habilidades"><a href="#habilidades">Habilidades</a></li>
+                        <li id="menu-projetos"><a href="#projetos">Projetos</a></li>
+                        <li><a href="#cursos">Cursos</a></li>
+                        <li><a href="#contato">Contato</a></li>                
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header> 
+
+
+    <main>
+        <section class="topo" id="topo">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-home">
+                        
+                        <div class="saudacao" id="saudacao"></div>
+                        <h2>Me chamo Wendy Santos Mininel</h2>
+                        <div class="descricao-profissional" id="descricao-profissional">
+                        </div>
+                        <p><span>Contato:</span> <br>
+                            <i class="fas fa-envelope"></i> wendy.mininel@gmail.com <br>
+                            <i class="fab fa-whatsapp"></i> (12) 997526992
+                        </p>
+                    </div>
+
+                    <div class="img-home">
+                        <img src="img/foto.jpeg" alt="Foto de Wendy Mininel">
+                    </div>
+                </div>
+            </div>
+                
+            <div class="icones" id="icones-container">
+
+            </div>
+        </section>
+
+
+        <section class="formacao" id="formacao">
+            <div class="interface">
+                <h2 class="titulo"> Formação Acadêmica</h2>
+                <div class="formacao-box" id="formacao-container">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="habilidades" id="habilidades">  
+            <div class="interface"> 
+                <h2 class="titulo"> Habilidades</h2>
+                <div class="flex">
+                    <div class="h-box">
+                        <h3><i class="fas fa-code"></i> Hard Skills</h3>
+                        <ul class="skills-list">
+                            <li>HTML5, CSS3, JavaScript</li>
+                            <li>Python e Flask</li>
+                            <li>Git e GitHub</li>
+                            <li>MySQL - Básico</li>
+                            <li>Power BI</li>
+                            <li>UX/UI Design</li>
+                            <li>Modelagem de Dados</li>
+                            <li>POO</li>
+                        </ul>
+                    </div>
+                    <div class="h-box">
+                        <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                        <ul class="skills-list">
+                            <li>Trabalho em equipe</li>
+                            <li>Criatividade</li>
+                            <li>Organização</li>
+                            <li>Comunicação</li>
+                            <li>Pensamento crítico</li>
+                            <li>Colaboração</li>
+                            <li>Gestão de tempo</li>
+                        </ul>
+                    </div>
+                    <div class="h-box">
+                        <h3><i class="fas fa-globe"></i> Idiomas</h3>
+                        <ul class="skills-list">
+                            <li>Português - Nativo</li>
+                            <li>Inglês - Intermediário</li>
+                            <li>Espanhol - Básico</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="projetos" id="projetos">
+            <div class="interface">
+                <h2 class="titulo"> Projetos</h2>
+                
+                <div class="filtros-container">
+                    <input type="text" id="pesquisa-projeto" placeholder="Pesquisar projetos..." class="campo-pesquisa">
+                </div>
+
+                <div class="projetos-container" id="projetos-container">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cursos" id="cursos">
+            <div class="interface">
+                <h2 class="titulo">Cursos e Certificações</h2>
+                
+                <div class="filtros-container" id="filtros-cursos">
+                    <input type="text" id="pesquisa-curso" placeholder="Pesquisar cursos..." class="campo-pesquisa">
+                    
+                    <div class="filtros-categoria">
+                        <button class="filtro-btn-cursos ativo" data-tipo="todos">Todos</button>
+                        <button class="filtro-btn-cursos" data-tipo="curso">Cursos</button>
+                        <button class="filtro-btn-cursos" data-tipo="certificacao">Certificações</button>
+                    </div>
+                </div>
+
+                <div class="cursos-container" id="cursos-container">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="links-profissionais" id="contato">
+            <div class="interface">
+                <h2 class="titulo">Entre em contato comigo : </h2>
+                <div class="links-container" id = 'links-container'>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="copy">
+                <p>&copy; 2026 Wendy Santos Mininel - Portfólio Acadêmico</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
